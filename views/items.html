@@ -1,0 +1,9 @@
+<form method="post" action="">
+    <input type="text" name="itemName">
+    <input type="submit" value="Créer l'item">
+</form>
+<ul>
+    {{#list}}
+        <a href="/item/{{id}}"><li>{{name}}</li></a>
+    {{/list}}
+</ul>
