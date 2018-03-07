@@ -1,0 +1,19 @@
+a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #C70039;
+}
+
+a:hover {
+    color: #900C3F;
+}
+
+.btn-primary{
+    background-color: #F1E1E7;
+    color: #000;
+    border-color: transparent;
+    width: 30%;
+    margin: auto;
+}

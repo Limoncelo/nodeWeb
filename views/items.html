@@ -1,6 +1,9 @@
-<form method="post" action="">
-    <input type="text" name="itemName">
-    <input type="submit" value="Créer l'item">
+<form method="post" action="/items">
+    <div class="form-group text-center">
+        <input type="text" name="name" class="form-control">
+        <br>
+        <input type="submit" value="Créer l'item" class="btn btn-primary form-control">
+    </div>
 </form>
 <ul>
     {{#list}}

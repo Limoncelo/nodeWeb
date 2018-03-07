@@ -4,5 +4,22 @@ services:
   server:
     image: node:8.9.4
     working_dir: /app
+    command: node index.js
     volumes:
       - .:/app
+    ports:
+      - '8000:8000'
+  browser-sync:
+    image: node:8.9.4
+    working_dir: /app
+    user: node
+    command: >
+      node_modules/.bin/browser-sync start
+        --proxy "server:8000"
+        --no-notify
+        --files="**/*"
+        --no-open
+    volumes:
+      - .:/app
+    ports:
+      - '3000:3000'
